@@ -1,6 +1,6 @@
 # tests/test_calculator.rb
 require 'minitest/autorun'
-require_relative 'calculator'
+require_relative '../calculator'
 
 class TestCalculator < Minitest::Test
   def setup
