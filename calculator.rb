@@ -1,21 +1,23 @@
 class Calculator
-  def add(a, b)
-    a + b
+  attr_reader :result
+
+  def initialize
+    @result = 0
   end
 
-  def subtract(a, b)
-    a - b
-  end
-  
-  def multiply(a, b)
-    a * b
+  def add(value1, value2)
+    @result = value1 + value2
   end
 
-  def divide(a, b)
-    if b != 0
-      a / b
-    else
-      "Error: Division by zero is not allowed"
-    end
+  def subtract(value1, value2)
+    @result = value1 - value2
+  end
+
+  def multiply(value1, value2)
+    @result = value1 * value2
+  end
+
+  def divide(value1, value2)
+    @result = value1 / value2
   end
 end

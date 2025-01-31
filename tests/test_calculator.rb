@@ -8,23 +8,22 @@ class TestCalculator < Minitest::Test
   end
 
   def test_add
-    @calculator.add(5)
+    @calculator.add(2, 3)
     assert_equal 5, @calculator.result
   end
 
   def test_subtract
-    @calculator.subtract(3)
-    assert_equal -3, @calculator.result
+    @calculator.subtract(5, 3)
+    assert_equal 2, @calculator.result
   end
+
   def test_multiply
-    @calculator.add(5) # Ensure the result is not zero
-    @calculator.multiply(2)
-    assert_equal 10, @calculator.result
+    @calculator.multiply(4, 2)
+    assert_equal 8, @calculator.result
   end
 
   def test_divide
-    @calculator.add(10) # Ensure the result is not zero
-    @calculator.divide(2)
+    @calculator.divide(10, 2)
     assert_equal 5, @calculator.result
   end
 end
